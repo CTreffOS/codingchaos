@@ -8,6 +8,6 @@ script: python aufgabe01/test.py
 notifications:
   irc:
     channels:
-      - "chat.freenode.net#ctreffos"
+      - "chat.freenode.net#CTreffOS"
     on_success: always
     on_failure: always
