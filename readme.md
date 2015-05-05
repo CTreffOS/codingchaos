@@ -1,5 +1,5 @@
-codingcha&lt;U&gt;OS
-====================
+codingchaos
+===========
 
 Die Fachschaft Mathematik/Informatik und der Chaostreff Osnabrück laden ein.
 
