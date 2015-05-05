@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
 
 def test():
-    return '123'
+		eins = '1'
+		zwei = '2'
+		drei = '3'
+  	return eins+zwei+drei
