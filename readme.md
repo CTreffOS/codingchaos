@@ -1,5 +1,5 @@
-codingcha<U>OS
-==============
+codingcha&lt;U&gt;OS
+====================
 
 Die Fachschaft Mathematik/Informatik und der Chaostreff Osnabrück laden ein.
 
@@ -12,4 +12,7 @@ kleine Aufgaben zu lösen und dabei in der Highscore zu landen.
 Vorraussetzung sind Java-Programmierkenntnisse im Informatik A Niveau, eigene
 Hardware um die Aufgaben zu bearbeiten und Freude an der Herausforderung.
 
+Vorherige Anmeldungen sind erwünscht:
 
+ - E-Mail an anmeldung@ctreffos.de
+ - Persönlich bei Fachschaft oder Chaostreff
