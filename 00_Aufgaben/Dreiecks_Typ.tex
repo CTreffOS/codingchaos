@@ -1,0 +1,74 @@
+\documentclass[a4paper]{article}
+\usepackage[USenglish,ngerman]{babel}
+\usepackage{lmodern}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{a4paper, top=25mm, left=25mm, right=25mm, bottom=13mm, headsep=4mm, footskip=4mm}
+\usepackage{lastpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{stmaryrd}
+\usepackage{pdflscape}
+\usepackage{listings}
+\usepackage{courier}
+\usepackage{graphicx}
+\author{Jochen Saalfeld}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Dreieckstyp}
+\fancyhead[C]{}
+\fancyhead[R]{Codingchaos}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyfoot[C]{Seite \thepage ~von \pageref{LastPage}}
+\renewcommand{\footrulewidth}{0.4pt}
+\begin{document}
+\section*{Dreieckstypen}
+Es gibt 3 verschieden Formen von Dreiecken. In dieser Aufgabe sollt ihr die drei Seitenlängen eines Dreiecks $(a,b,c)$ in irgendeiner Reihenfolge aufnehmen und den Typen des Dreiecks bestimmen.
+\paragraph{Spitzes Dreieck:} Wenn alle Winkel im Dreieck unter 90° groß sind, ist es ein Spitzwinkliges Dreieck und die Funktion sollte \texttt{1} zurück geben.
+\paragraph{Rechtwinkliges Dreieck:} Sobald ein Winkel im Dreieck 90° groß ist, ist es ein rechtwinkles Dreieck und die Funktion sollte \texttt{2} zurück geben.
+\paragraph{Stumpfwinkliges Dreieck:} Wenn ein Winkel über 90° groß ist, ist es ein stumpfes Dreieck und die Funktion sollte \texttt{3} zurück geben.
+\paragraph{Übrige Fälle:} Wenn ein Winkel des Dreiecks 180° groß ist, wird das Dreieck zur Linie und es soll \texttt{0} zurück gegeben werden.
+\section*{Die Funktion}
+Für jede Sprache gilt: Es gibt einen Rückgabewert der Funktion vom Typ Integer und es gibt 3 Eingabewerte vom Typ Double.
+\subsection*{Python}
+\begin{lstlisting}[language=Python]
+	def triangle_type(a, b, c):
+\end{lstlisting}
+\subsection*{Java}
+\begin{lstlisting}[language=Java]
+	class Traingle {
+		public static int triangle_type (int a, int b, int c) {};
+	}
+\end{lstlisting}
+\subsection*{Ruby}
+\begin{lstlisting}[language=Ruby]
+	def triangle_type (a, b, c)
+\end{lstlisting}
+\subsection*{C}
+\begin{lstlisting}[language=C]
+	int triangle_type (int a, int b, int c)
+\end{lstlisting}
+\newpage
+\onecolumn
+\section*{Lösungen}
+\subsection*{Python}
+\begin{lstlisting}[language=Python]
+	def triangle_type(a, b, c):
+\end{lstlisting}
+\subsection*{Java}
+\begin{lstlisting}[language=Java]
+	class Traingle {
+		public static int triangle_type (int a, int b, int c) {};
+	}
+\end{lstlisting}
+\subsection*{Ruby}
+\begin{lstlisting}[language=Ruby]
+	def triangle_type (a, b, c)
+\end{lstlisting}
+\subsection*{C}
+\begin{lstlisting}[language=C]
+	int triangle_type (int a, int b, int c)
+\end{lstlisting}
+\end{document}
