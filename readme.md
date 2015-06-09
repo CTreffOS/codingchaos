@@ -1,18 +1,32 @@
-codingchaos
-===========
+Codingchaos - 10. Juni 2015
+===========================
 
 Die Fachschaft Mathematik/Informatik und der Chaostreff Osnabrück laden ein.
 
 Ziel ist es möglichst schnell, kurz und elegant im Wettbewerb gegeneinander
 kleine Aufgaben zu lösen und dabei in der Highscore zu landen.
 
- - 10. Juni 2015, 18 Uhr
- - 5 Aufgaben, je 20 Minuten
+Mehr Infos: http://codingchaos.ctreffos.de/
 
-Vorraussetzung sind Java-Programmierkenntnisse im Informatik A Niveau, eigene
-Hardware um die Aufgaben zu bearbeiten und Freude an der Herausforderung.
 
-Vorherige Anmeldungen sind erwünscht:
+Abgaben
+-------
 
- - E-Mail an anmeldung@ctreffos.de
- - Persönlich bei Fachschaft oder Chaostreff
+Zur Aufgabenlösung erstellt in dem jeweiligen Aufgabenordner einen Unterordner
+mit eurem Namen oder Kürzel (RZ-Login ist gerne gesehen) und löst dort die
+jeweilige Aufgabe. Erstellt dann einen Pull-Request gegen dieses Repository.
+
+
+Sprachen
+--------
+
+Grundsätzlich gilt, es dark verwendet werden, was die Jury bewerten und testen
+kann alles andere gibt Punktabzug oder gilt sogar als ungelöst. Folgende
+Sprachen incl. Standardbibliothek können ohne weitere Rücksprache verwendet
+werden:
+
+ - Java
+ - C
+ - Python
+
+Alles andere Bedarf eine kurze Rücksprache mit der Jury.
