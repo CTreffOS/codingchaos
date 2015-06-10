@@ -2,13 +2,14 @@ import sys
 
 def main(money, price):
 	bottles = money // price
-	layers = 0;
+	layers = 1;
 	bottles_per_layer = 1;
 	while bottles >= bottles_per_layer:
+		print(bottles_per_layer)
 		bottles -= bottles_per_layer
 		layers += 1
-		bottles_per_layer *= 4
-	print(layers)
+		bottles_per_layer = layers ** 2
+	print(layers - 1)
 
 
 
