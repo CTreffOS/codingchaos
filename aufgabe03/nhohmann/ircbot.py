@@ -5,7 +5,7 @@ import socket
 import re
 
 
-termination = '\n\0'
+termination = '\r\n\0'
 
 
 class Message:
@@ -39,12 +39,13 @@ class Message:
 
 
 class IRCClient(threading.Thread):
-	def __init__(self, server, nickname):
+	def __init__(self, server, channel, nickname):
 		threading.Thread.__init__(self)
 
 		self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 		self.nickname = nickname
+		self.channel = channel
 		self.server = server
 
 		self.buffer = ''
@@ -54,7 +55,7 @@ class IRCClient(threading.Thread):
 
 		try:
 			print 'Connecting to server %s...'%self.server
-			self.socket.connect( (self.server, 6667) )
+			self.socket.connect((self.server, 6667))
 			success = True
 
 		except Exception as e:
@@ -81,8 +82,9 @@ class IRCClient(threading.Thread):
 			self.send('PRIVMSG #%s :%s'%(self.channel, msg))
 
 	def login(self):
-		self.send(termination.join(['USER %s %s %s %s'%(self.nickname, self.server, self.server, self.nickname),
-				'NICK '+ self.nickname]))
+		self.send(termination.join(['USER %s %s %s :Test'%(self.nickname, self.nickname, self.nickname),
+				'NICK '+ self.nickname,
+				'JOIN #'+ self.channel]))
 
 	def read(self):
 		chunk = self.socket.recv(1024)
@@ -97,9 +99,7 @@ class IRCClient(threading.Thread):
 			if not self.connect():
 				return False
 
-			print "test"
 			self.login()
-			print "test2"
 
 			threading.Thread.start(self)
 
@@ -137,7 +137,7 @@ class IRCClient(threading.Thread):
 
 
 
-client = IRCClient("irc.freenode.net", "sicksheep")
+client = IRCClient("irc.freenode.net", "codingchaos", "sicksheep")
 if not client.start():
 	print 'Could not start IRC-Client!'
 	sys.exit(1)
