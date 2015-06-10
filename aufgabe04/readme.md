@@ -13,7 +13,7 @@ Bierpyramide geht es darum zwei Gleitkommazahlen entgegen zu nehmen
 (Geld zu verfügung und Bierpreis), euer Programm erechnen wie hoch ihr eine
 Pyramide aus den Biergläsern bauen könnt. Dabei braucht jede Ebene quadratisch
 viele Biergläser. Also die obertse Ebene 1 Glas die zweite Ebene 2^2 also 4
-Gläser, die dritte ebene 16 usw.
+Gläser, die dritte ebene 9 usw.
 
 
 Wie muss ich programmieren?
