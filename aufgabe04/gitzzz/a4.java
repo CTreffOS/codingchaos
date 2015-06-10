@@ -27,7 +27,6 @@ Gläser, die dritte ebene 9 usw.
         
         float a = Float.parseFloat(args[0]);
         float b = Float.parseFloat(args[1]);
-        
 
               
         
@@ -37,8 +36,11 @@ Gläser, die dritte ebene 9 usw.
         do {
             
             x+=1;
-            x=x*x;
+            bier=bier-(x*x);
             level++;
+            System.out.println("x: "+x);
+            System.out.println("bier: "+bier);
+            System.out.println("Ebenen: "+level);
         }
         while (x<bier);
             
