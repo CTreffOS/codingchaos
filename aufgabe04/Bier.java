@@ -8,8 +8,8 @@ public class Bier {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		double bonus = 25.5;
-		double preis = 1.2;
+		double bonus = Double.parseDouble(args[0].trim());
+		double preis = Double.parseDouble(args[1].trim());
 		double kostenSumme=0;
 		int ebene = 1;
 		
