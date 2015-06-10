@@ -13,6 +13,7 @@ class Bot
       on :message, "!say" do |m|
         m.reply "hello!"
       end
+
     end
 
     bot.start
