@@ -21,11 +21,10 @@ public class Bierpyramide {
     int quadrat = 1;
     int ungerade = 1;
     int hoehe = 0;
-    while(anzBier > quadrat) {
+    while(anzBier >= quadrat) {
       anzBier = anzBier - quadrat;
       hoehe++;
       ungerade = ungerade + 2;
-      IO.println(ungerade + " " + quadrat);
       quadrat = quadrat + ungerade;
     }
 
