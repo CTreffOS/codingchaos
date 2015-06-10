@@ -13,7 +13,6 @@ public class Beer {
 			if(count == 1)
 			{
 				money -= beer;
-				count++;
 			}
 			else if(count > 1)
 			{
