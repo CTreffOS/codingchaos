@@ -1,8 +1,4 @@
-import sys
-import math
+import sys, math
 r,s,t=map(float,sys.argv[1:])
-a=map(lambda a,b,c:(a**2+b**2-c**2)/(2*a*b),[r,s,t],[s,r,t],[t,r,s])
-if all(map(lambda w: w<1, a)): print 1
-elif any(map(lambda w: w==1, a)): print 2
-elif any(map(lambda w: w>1, a)): 
-  print not any(map(lambda w: w==0, a)) and 3 or 0
+a=map(lambda a,b,c:a*b>0 and(a**2+b**2-c**2)/(2*a*b)or 0,[r,s,t],[s,r,t],[t,r,s])
+print filter(lambda(n,t):t,enumerate(map(lambda o,a:o(a),[any,all,any,any],zip(*map(lambda w:(w==0,w<1 and w!=0,w==1,w>1),a)))))[0][0]
