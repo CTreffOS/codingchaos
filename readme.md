@@ -34,3 +34,8 @@ werden:
  - Rust
 
 Alles andere Bedarf eine kurze Rücksprache mit der Jury.
+
+# Gewinner (ermittelt am 17.06.2015)
+1. [kstandvoss](https://github.com/kstandvoss) 
+2. [nmeyering](https://github.com/nmeyering) 
+3. [BobMcFry](https://github.com/BobMcFry) 
